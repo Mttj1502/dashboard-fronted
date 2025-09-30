@@ -13,8 +13,24 @@ const MyContext = createContext();
 function App() {
 
   const [isToggleSidebar, setIsToggleSidebar] = useState(false);
-  const [isLogin, setIsLogin] = useState(false);
+  const [isLogin, setIsLogin] = useState(true);
   const [isHideSidebarAndHeader, setisHideSidebarAndHeader] = useState(false);
+  const [themeMode, setThemeMode] = useState(true);
+
+  useEffect(()=>{
+    if(themeMode===true){
+     document.body.classList.remove('dark');
+     document.body.classList.add('light');
+     localStorage.setItem('themeMode', 'light');
+    }
+    else{
+      document.body.classList.remove('light');
+      document.body.classList.add('dark');
+      localStorage.setItem('themeMode', themeMode);
+    }
+    
+  },[themeMode]);
+
   
 const values={
   isToggleSidebar,
@@ -22,7 +38,9 @@ const values={
   isLogin,
   setIsLogin,
   isHideSidebarAndHeader,
-  setisHideSidebarAndHeader
+  setisHideSidebarAndHeader,
+  themeMode,
+  setThemeMode
 }
 
   return (
