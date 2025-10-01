@@ -246,6 +246,8 @@ body.dark p, body.dark .css-1rfqz7c-MuiSvgIcon-root-MuiNativeSelect-root-MuiSele
 body.dark .css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline{border-color: rgba(255,255,255,0.8) !important;}
 
 .table-responsive::-webkit-scrollbar-thumb{background: #ccc !important;}
+body.dark .table-responsive::-webkit-scrollbar-thumb{background: rgba(255, 255, 255, 0.3) !important;}
+
 
 .table .table-dark th{background-color: #1866ee !important; border-color: rgba(255, 255, 255, 0.3) !important;
 font-size: 13px !important; margin: 0px 3px !important;}
@@ -291,11 +293,20 @@ white-space: nowrap; color: #5e5d72; margin-bottom: 0px;}
 
  .tableFooter p{font-size: 14px; font-weight: 500; margin-bottom: 0px;}
 
- body.dark table td{color: rgba(255,255,255,0.7) !important;}
+ body.dark table td{color: rgba(255,255,255,0.6) !important;}
 
  .css-1to7aaw-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected{background-color: #0858f7 !important;}
 
- 
+ body.dark .table-bordered td, .table-bordered th{border: 1px solid rgba(255,255,255,0.1) !important;}
+
+body.dark .css-1to7aaw-MuiButtonBase-root-MuiPaginationItem-root:hover{background: rgba(255, 255, 255, 0.2) !important; color: #fff !important;}
+
+ body.dark .css-1to7aaw-MuiButtonBase-root-MuiPaginationItem-root{color: rgba(255, 255, 255, 0.8) !important;}
+
+
+
+ .css-1bug3cd-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected{background-color: #0858f7
+!important;}
  
  .css-1bug3cd-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected{background-color: #0858f7
 !important;}
