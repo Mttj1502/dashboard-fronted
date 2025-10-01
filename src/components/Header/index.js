@@ -19,6 +19,7 @@ import Logout from '@mui/icons-material/Logout';
 import { IoShieldHalfSharp } from "react-icons/io5";
 import Divider from '@mui/material/Divider';
 import { MyContext } from '../../App';
+import UserAvatarImgComponent from '../userAvatarImg';
 
 
 
@@ -98,15 +99,11 @@ const Header=()=>{
 
                                     <Divider className='mb-1' />
 
-                                    <div className='scroll'>
-                                      <MenuItem onClick={handleCloseMyAccDrop}>
+                            <div className='scroll'>
+                                 <MenuItem onClick={handleCloseMyAccDrop}>
                                     <div className='d-flex align-item-center'>
                                      <div>
-                                           <div className='userImg'>
-                                            <span className='rounded-circle'>
-                                                <img src='https://mironcoder-hotash.netlify.app/images/avatar/01.webp'/>
-                                            </span>
-                                        </div>
+                                        <UserAvatarImgComponent img={'https://mironcoder-hotash.netlify.app/images/avatar/01.webp'}/>
                                      </div>
 
                                         <div className='dropdownInfo'>

@@ -9,7 +9,11 @@ body.dark{background: #071739 !important;}
 ::-webkit-scrollbar-thumb{background: #0858f7 !important;}
 ::-webkit-scrollbar-track{background: transparent !important;}
 
-h1, h2, h3, h4, h5, h6{color: #403e57;}
+h1, h2, h3, h4, h5, h6, p{color: #403e57;}
+
+p{font-weight: 300; font-size: 15px; line-height: 25px;}
+
+h4{line-height: 32px;}
 
 .btn-blue{background: #0858f7 !important; font-size: 14px !important; font-weight: 600 !important;
 color: #fff !important; text-transform: capitalize !important; border-radius: 5px 
@@ -67,8 +71,10 @@ body.dark .searchBox input,body.dark .searchBox input::-webkit-input-placeholder
 .userImg .rounded-circle{display: flex; align-items: center; justify-content: center; overflow: hidden; width: 100%px; height: 100%px; cursor: pointer; position: relative;}
 .userImg .rounded-circle img{object-fit: cover; width: 100%; height: 100%;}
 
+.userImg.lg{width: 60px !important; height: 60px !important;}
+
 .myAcc .userInfo{padding-left: 10px;}
-.myAcc .userInfo h4{font-size: 15px; font-weight: 600; margin-bottom: 0px; color: #292929;}
+.myAcc .userInfo h4{font-size: 15px; line-height: 15px ;font-weight: 600; margin-bottom: 0px; color: #292929;}
 .myAcc .userInfo p{margin-top: 0px; font-size: 12px; color: #000; opacity: 0.7;}
 
 body.dark .myAcc .userInfo *{color: rgba(255,255,255,0.8) !important;}
@@ -248,6 +254,7 @@ body.dark .css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline{b
 .table-responsive::-webkit-scrollbar-thumb{background: #ccc !important;}
 body.dark .table-responsive::-webkit-scrollbar-thumb{background: rgba(255, 255, 255, 0.3) !important;}
 
+.slick-slide::before{outline: none !important;}
 
 .table .table-dark th{background-color: #1866ee !important; border-color: rgba(255, 255, 255, 0.3) !important;
 font-size: 13px !important; margin: 0px 3px !important;}
@@ -354,3 +361,39 @@ padding-top: 10px !important;}
 .signUpSection .part1{padding-left: 100px; padding-right: 100px;}
 .signUpSection .part1 h1{font-size: 50px; font-weight: 800;}
 .signUpSection .part1 p{font-size: 18px; font-weight: 500;}
+
+.sliderSml .slick-slide{padding-right: 10px;}
+.sliderSml .slick-slide .item{border-radius: 7px !important; overflow: hidden;}
+
+.sliderSml *, .sliderBig *{transition: all 0.2s !important;}
+.sliderBig{overflow: hidden; border-radius: 10px;}
+
+.productDetailsSEction .productInfo .icon{width: 28%; flex: 0 0 28%}
+.productDetailsSEction .productInfo .icon svg{font-size: 22px;}
+.productDetailsSEction .productInfo .name{width: 72%; flex: 0 0 72%; font-weight: 600;
+font-size: 15px; color: rgba(255, 255, 255, 0.8) !important;}
+
+.productDetailsSEction .productInfo .row{margin-bottom: 10px !important;}
+.productDetailsSEction .productInfo .row .col-sm-7{display: flex; align-items: center;}
+.productDetailsSEction .productInfo .row .col-sm-9 span{opacity: 0.8; font-size: 15px;
+padding-left: 20px;}
+
+.tags{margin-bottom: 0px !important;}
+.tags li span{display: flex; align-items: center; justify-content: center; background: #1b2b4d !important;
+border-radius: 5px !important; font-size: 13px !important; padding: 5px 10px !important;}
+
+.tags li span:first-child{padding-left: 0px !important;}
+
+.ratingSection{width: 500px;}
+.ratingSection .ratingrow{width: 100%; margin-bottom: 15px !important;}
+.ratingSection .ratingrow .progress{height: 5px !important; background-color: #000 !important;}
+.ratingSection .ratingrow .progress .progress-bar{background: #edb213 !important;}
+.ratingSection .ratingrow .col1{width: 15%; flex: 0 0 15%; display: flex;}
+.ratingSection .ratingrow .col2{width: 50%; flex: 0 0 50%;}
+.ratingSection .ratingrow .col3{width: 25%; flex: 0 0 25%; display: flex; padding-left: 20px;}
+
+.reviewsSecrion{width: 100%; display: flex; flex-direction: column;}
+.reviewsSecrion .reviewsRow{width: 100%; height: auto; background: #071739; padding: 35px; 
+border-radius: 10px;}
+
+.userInfo h6{margin-bottom: 0px;}
